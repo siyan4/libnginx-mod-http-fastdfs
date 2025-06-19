@@ -43,5 +43,5 @@ sudo systemctl restart fdfs_storaged.service
 sudo systemctl restart nginx.service
 _var_lib_dpkg_status=$(fdfs_upload_file /etc/fdfs/client.conf /var/lib/dpkg/status)
 
-curl http://localhost/${_var_lib_dpkg_status)|more
+curl http://localhost/${_var_lib_dpkg_status}|more
 ```
